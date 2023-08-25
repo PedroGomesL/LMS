@@ -3,13 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Utilizei a mesma atividade-->
     <title>Principais noticias do dia 17/08/2023</title>
 </head>
 
 <body>
+    <!--Aqui adicionei o setor HEADER, que é para demarcar a parte superior da página-->
     <header>
         <h1>Principais noticias do dia 17/08/2023</h1>
     </header>
+    <!--Adicionei o setor NAV, que para uma lista de link, como está no centro da pagina não utilizei a tag aside-->
     <nav>
         <ol>
             <li><a href="https://g1.globo.com/politica/noticia/2023/08/17/hacker-omitiu-a-pf-informacoes-que-revelou-na-cpmi-dos-atos-golpistas.ghtml"
@@ -20,6 +23,7 @@
                     target="_blank"><img src="/Atividade 1/pao.png" alt="CARTELA DE DIPIRONA"></a></li>
         </ol>
     </nav>
+    <!--Adicionei o main, que é a parte principal da página, que é as informações dos links que estão na NAV-->
     <main>
         <table>
             <thead>
@@ -41,11 +45,42 @@
                     <td>Disponível há um século, o <mark> remédio isento de prescrição é indicado no Brasil</mark> para
                         <br>
                         tratar febre e dor — <b><mark> mas uma polêmica nos anos 1970 fez com que ele se tornasse
-                                praticamente desconhecido em diversos países atualmente.</mark></b></td>
+                                praticamente desconhecido em diversos países atualmente.</mark></b>
+                    </td>
                 </tr>
             </tbody>
         </table>
     </main>
+    <!--Article para toda parte do formulario-->
+    <article>
+        <!--Comecei com o form e adicionei o action que leva para a pagina da w3schools que mostra todos os summit, para isso complentei com o method get
+        dessa forma a respota vai aparecer na caixa da URL-->
+        <form action="https://www.w3schools.com/action_page.php" method="get">
+            <p>Nome</p><br>
+            <!--Input do nome, maxlength para limitar os 15 digitos-->
+            <input type="text" name="username" maxlength="15"> <br>
+            <!--Input que não é possivel digitar, para isso utilizei o readonly-->
+            <input type="text" value="Interdum sodales metus quisque elit gravida luctus primis 
+            enim consectetur, fusce tellus blandit senectus donec dapibus justo fermentum sodales, 
+            adipiscing elementum libe" readonly>
+            <br>
+            <!--Input radio, nome é relacionado ao gênero e value dos tipos-->
+            <input type="radio" name="gender" value="Male" checked> Male <br>
+            <input type="radio" name="gender" value="Female" checked> Female <br>
+            <input type="radio" name ="gender" value="other"> Other <br> <br>
+            <!--Input do checkbox, que da para marcar varias opções, para exemplo utilizei eletrodomésticos-->
+            <p>Qual desses eletrodomésticos você possui em casa: </p> 
+            <input type="checkbox" name="eletrodomésticos" value="Geladeira">Geladeira <br>
+            <input type="checkbox" name="eletrodomésticos" value="Fogão">Fogão <br>
+            <input type="checkbox" name="eletrodomésticos" value="maquina de lavar">maquina de lavar <br>
+            <!--Input numerico, para limitar utilizei o min e o max, qualquer numero fora não passa-->
+            <p>Digite um numero entre 25000 e 30000</p>
+            <input type="number" name="quantidade" min="25000" max="30000"> <br> <br>
+
+            <!--Input final para dar submit-->
+            <input type="submit" name="submit"> <br>
+        </form>
+    </article>
 </body>
 
 </html>
