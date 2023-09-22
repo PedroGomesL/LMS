@@ -1,13 +1,13 @@
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
+        /*Achei muito dificil a parte do sub-menu, na internet não tinha um conteudo claro sobre, utilizei o gpt para auxiliar nessa parte, 3 horas */
         h2 {
             font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-            padding-top: 75px;
+            padding-top: 100px;
         }
 
         section {
@@ -16,43 +16,69 @@
             padding: 150px 150px 150px 200px;
             font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
         }
-        nav {
-            background-color: red;
-            float: left;
-        }
-        nav li {
-            position: relative;
-            float: left;
-            border-right: 1px solid blue;
-            padding: 10px 10px 20px 20px;
-            list-style: none;
-        }
-        nav:hover{
-            background: orange;
-        }
-        li ul{
-            position: absolute;
-            top: 25px;
-            left: 0px;
-            background-color: #fff;
-            display: none;
-        }
-        li:hover ul, li.over ul{display: block;}
-        li ul li{
-            display: block;
-            width: 150px;
-        }
+       /* Estilizando o menu principal */
+.menu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background-color: orange;
+}
+
+.menu li {
+    display: inline;
+    margin-right: 20px; /* Espaçamento entre os itens do menu principal */
+}
+
+.menu a {
+    text-decoration: none;
+    color: #333; /* Cor do texto do menu principal */
+}
+
+/* Estilizando o submenu */
+.menu ul ul {
+    display: none; /* Oculta o submenu por padrão */
+    position: absolute;
+    background-color: #1aa8d3; /* Cor de fundo do submenu */
+    border: 1px solid #ccc;
+    padding: 10px;
+}
+
+.menu li:hover ul {
+    display: block; /* Exibe o submenu quando o item do menu principal é hover */
+}
+
+.menu ul ul li {
+    display: block;
+    margin: 0;
+    padding: 0;
+}
+
+.menu ul ul a {
+    color: #000000; /* Cor do texto do submenu */
+}
+
+.menu ul ul a:hover {
+    color: #000; /* Cor do texto do submenu ao passar o mouse */
+}
 
     </style>
 </head>
 
 <body>
-    <nav>
+    <nav class="menu">
         <ul>
-            <li>home</li>
-            <li>sobre</li>
-            <li>pesquisa</li>
-            <li>g1</li>
+            <li><a href="">home</a></li>
+            <li>
+                <a href="">jogos</a>
+                <ul>
+                    <li><a href="">puzzle</a></li>
+                    <li><a href="">RPG</a></li>
+                    <li><a href="">ze</a></li>
+                </ul>
+            </li>
+            <li><a href="">sobre</a></li>
+            <li><a href="">pesquisa</a></li>
+            <li><a href="">g1</a></li>
         </ul>
     </nav>
     <h2>Em fim de mandato na PGR, Aras diz que sua gestão sofreu com 'falsas narrativas' e 'incompreensões'</h2>
