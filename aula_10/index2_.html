@@ -1,0 +1,81 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            overflow: auto;
+        }
+
+        .conteudo {
+            margin:5px;
+        }
+        .menu_esquerdo {
+            float: none;
+            width: auto;
+        }
+        .menu {
+            margin: 0px;
+            padding: 0px;
+            display: flex;
+        }
+        .menu_item {
+            background-color: beige;
+            border: 1px solid;
+            border-radius: 5px;
+            list-style-type: none;
+            margin: 4px;
+            padding: 4px;
+        }
+
+        @media screen and (min-width: 700px){
+            .menu_esquerdo {
+                width: 200px;
+                float: left;
+            }
+            #conteudo {
+                margin-left:220px ;
+            }
+            .menu{
+                display: block;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <!--Menu lateral esquerdo/superior-->
+        <div class="menu_esquerdo">
+            <ul class="menu">
+                <li class="menu_item">Menu 1</li>
+                <li class="menu_item">Menu 1</li>
+                <li class="menu_item">Menu 1</li>
+                <li class="menu_item">Menu 1</li>
+
+            </ul>
+        </div>
+        <div>
+        </div>
+
+        <div class="conteudo">
+            <!--Conteudo-->
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Itaque, quas ipsam officiis possimus ipsa
+                voluptatum impedit amet perspiciatis qui sint sunt totam deleniti voluptates delectus vero deserunt.
+                Dolore,
+                aliquid, laudantium, libero eaque animi reprehenderit commodi quisquam similique quo temporibus quaerat.
+                Incidunt eaque molestiae dicta porro dolorum facere quaerat, excepturi recusandae ex vero, architecto
+                alias,
+                minima at dolor? Magni libero, aspernatur inventore, pariatur officiis tempora esse cumque quod
+                repellendus,
+                maxime provident aut! Corporis veritatis reiciendis ducimus harum incidunt ipsa reprehenderit non dolore
+                quaerat, perferendis corrupti provident hic rem dolores at distinctio debitis totam aliquid ea enim ad,
+                fuga
+                labore aut? Optio.</p>
+        </div>
+    </div>
+</body>
+
+</html>
